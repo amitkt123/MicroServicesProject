@@ -1,0 +1,17 @@
+# Ignore Eclipse project files
+.metadata/
+.classpath
+.project
+.settings/
+
+# Ignore other system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore node_modules (if you're using Node.js)
+node_modules/
+
+# Ignore build output directories
+target/
+bin/
