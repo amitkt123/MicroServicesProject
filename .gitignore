@@ -3,8 +3,10 @@
 .classpath
 .project
 .settings/
-.idea
-.vscode
+
+#ignore the idea and vscode project files
+.vscode/
+.idea/
 
 # Ignore other system files
 Thumbs.db
