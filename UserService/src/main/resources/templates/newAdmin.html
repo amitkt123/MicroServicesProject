@@ -3,54 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Admin Signup</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
         }
         .signup-container {
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
             width: 300px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .signup-container h1 {
-            margin-bottom: 10px;
-            font-size: 24px;
             text-align: center;
-        }
-        .signup-container h2 {
             margin-bottom: 20px;
-            font-size: 18px;
-            text-align: center;
-            color: #555;
+        }
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
         }
         .signup-container input[type="text"],
         .signup-container input[type="email"],
-        .signup-container input[type="password"],
-        .signup-container input[type="date"] {
-            width: 100%;
+        .signup-container input[type="password"] {
+            margin-bottom: 15px;
             padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            box-sizing: border-box;
         }
         .signup-container input[type="submit"] {
-            width: 100%;
             padding: 10px;
-            margin: 10px 0;
-            background-color: #28a745;
-            color: white;
             border: none;
             border-radius: 5px;
+            background-color: #28a745;
+            color: white;
             cursor: pointer;
         }
         .signup-container input[type="submit"]:hover {
@@ -58,7 +51,7 @@
         }
         .signup-container .login-link {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .signup-container .login-link a {
             color: #007bff;
@@ -71,19 +64,16 @@
 </head>
 <body>
     <div class="signup-container">
-        <h1>Signup</h1>
-       
-        <form action="/signup" method="post">
-            <input type="text" name="name" placeholder="Name" required>
+        <h1>Admin Signup</h1>
+        <form action="/admin/signup" method="post">
+            <input type="text" name="username" placeholder="Username" required>
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="text" name="address" placeholder="Address" required>
-            <input type="date" name="dob" placeholder="Date of Birth" required>
-            <input type="text" name= "address" placeholder = "Address" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
             <input type="submit" value="Signup">
         </form>
         <div class="login-link">
-            <p>Already have an account? <a href="/login">Login</a></p>
+            <p>Already have an account? <a href="/admin/login">Login</a></p>
         </div>
     </div>
 </body>

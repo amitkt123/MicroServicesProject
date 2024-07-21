@@ -15,11 +15,13 @@ public class SecurityConfig {
      SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(authorize -> authorize
-                .requestMatchers("/login", "/register").permitAll()
-                .anyRequest().authenticated()
+                .requestMatchers("/login", "/signup","/admin", "/perform_login")
+                .permitAll()
+                .anyRequest()
+                .authenticated()
             )
             .formLogin(formLogin -> formLogin
-                .loginPage("/login") // Custom login page
+                .loginPage("/login")  
                 .loginProcessingUrl("/perform_login")
                 .defaultSuccessUrl("/home", true)
                 .failureUrl("/login?error=true")
