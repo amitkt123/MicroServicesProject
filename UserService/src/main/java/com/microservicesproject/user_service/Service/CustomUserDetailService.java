@@ -1,4 +1,4 @@
-package com.microservicesproject.Service;
+package com.microservicesproject.user_service.Service;
 
 import java.util.Optional;
 
@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.microservicesproject.Model.Users;
-import com.microservicesproject.Repository.UserRepository;
+import com.microservicesproject.user_service.Model.Users;
+import com.microservicesproject.user_service.Repository.UserRepository;
 
 @Service
 public class CustomUserDetailService implements UserDetailsService {

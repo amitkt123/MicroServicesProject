@@ -1,4 +1,4 @@
-package com.microservicesproject.Service;
+package com.microservicesproject.user_service.Service;
 
 import java.util.Optional;
 import java.util.Set;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
-import com.microservicesproject.DTO.UserRequestDTO;
-import com.microservicesproject.Model.Users;
-import com.microservicesproject.Repository.UserRepository;
+import com.microservicesproject.user_service.DTO.UserRequestDTO;
+import com.microservicesproject.user_service.Model.Users;
+import com.microservicesproject.user_service.Repository.UserRepository;
 
 @Service
 public class UserService {

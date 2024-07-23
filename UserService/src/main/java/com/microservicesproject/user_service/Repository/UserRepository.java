@@ -1,10 +1,10 @@
-package com.microservicesproject.Repository;
+package com.microservicesproject.user_service.Repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.microservicesproject.Model.Users;
+import com.microservicesproject.user_service.Model.Users;
 
 
 public interface UserRepository extends JpaRepository<Users, Long> {

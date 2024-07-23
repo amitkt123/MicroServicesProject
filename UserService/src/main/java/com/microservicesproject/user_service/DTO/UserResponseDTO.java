@@ -1,10 +1,11 @@
-package com.microservicesproject.DTO;
+package com.microservicesproject.user_service.DTO;
 
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.microservicesproject.Enums.Role;
+import com.microservicesproject.user_service.Enums.Role;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class UserResponseDTO {
-	
+	@NotBlank
     @JsonProperty("username")
     private String username;
     @JsonProperty("role")

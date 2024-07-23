@@ -1,9 +1,9 @@
-package com.microservicesproject.Model;
+package com.microservicesproject.user_service.Model;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.microservicesproject.Enums.Role;
+import com.microservicesproject.user_service.Enums.Role;
 
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.ElementCollection;
@@ -15,7 +15,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -37,5 +36,5 @@ public class Users {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles = new HashSet<>();
 
-    // Getters and setters
+    
 }

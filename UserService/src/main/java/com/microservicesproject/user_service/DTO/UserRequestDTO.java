@@ -1,7 +1,9 @@
-package com.microservicesproject.DTO;
+package com.microservicesproject.user_service.DTO;
+
+import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.microservicesproject.Enums.Role;
+import com.microservicesproject.user_service.Enums.Role;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -17,17 +19,16 @@ import lombok.Setter;
 @AllArgsConstructor
 public class UserRequestDTO {
 	@NotBlank
-	@JsonProperty("name")
-	String usernameString;
+	private String usernameString;
+
 	@NotBlank
-	@JsonProperty("password")
-	String passString;
-	@JsonProperty("email")
-	String useremailString;
-	@JsonProperty("mobile")
+	private String passString;
+
+	private String useremailString;
+
 	private String mobString;
-	@JsonProperty
+
 	private String addressString;
-	@JsonProperty("role")
-	Role role;
+
+	private Role role;
 }
