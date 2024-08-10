@@ -1,8 +1,5 @@
 package com.microservicesproject.user_service.DTO;
 
-import java.util.Set;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.microservicesproject.user_service.Enums.Role;
 
 import jakarta.validation.constraints.NotBlank;

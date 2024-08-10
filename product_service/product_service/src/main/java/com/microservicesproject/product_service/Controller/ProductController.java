@@ -32,10 +32,9 @@ public class ProductController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<String> CreateProduct(@RequestBody ProductRequestDTO prod){
+    public ResponseEntity<Optional<String>> CreateProduct(@RequestBody ProductRequestDTO prod){
     	Optional<String > response = service.createProduct(prod);
-    	return ResponseEntity.of(response);
-  
+    	 return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @GetMapping()

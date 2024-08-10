@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: APIGateway
+  
+  cloud:
+    gateway:
+      routes:
+        - id: user_service
+          uri: lb://user_service
+          predicates:
+            - Path=/consumer/**
+        - id: product_service
+          uri: lb://product_service
+          predicates:
+            - Path=/api/product/**
+        - id: inventory_service
+          uri: lb://inventory_service
+          predicates:
+            - Path=/api/inventory/**
+      discovery:
+        locator:
+          enabled: true
+
+server:
+  port: 9095  # API Gateway runs on port 9095
+logging:
+ level:
+   root: INFO
+   org:
+     springframework:
+       cloud:
+         gateway:
+           route:
+             RouteDefinitionLocator: INFO
+           gateway: TRACE 

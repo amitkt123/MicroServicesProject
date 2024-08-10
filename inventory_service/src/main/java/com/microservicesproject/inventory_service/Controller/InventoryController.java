@@ -30,7 +30,7 @@ public class InventoryController {
 	}
 
 	@GetMapping("/{item_code}")
-    public InventoryResponseDTO getInventory(@PathVariable("item_code") String item_code) {
+    public InventoryResponseDTO getInventory(@PathVariable String item_code) {
         return service.getInventoryByItemCode(item_code );
     }
 
