@@ -31,6 +31,7 @@ public class Users {
     private String email;
     @Size(min = 10, max = 15)
     private String mobileNumber;
+    private String address;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)

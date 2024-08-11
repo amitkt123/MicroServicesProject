@@ -24,11 +24,14 @@ public class UserResponseDTO {
     private Role role;
     @JsonProperty
     private String mobilString;
-    
+    @JsonProperty
+    private String passString;
     @JsonProperty
     private String emailString;
     @JsonProperty("dateCreated")
     private LocalDateTime createdDate;
     @JsonProperty("dateModified")
     private LocalDateTime lastModifiedDate;
+    @JsonProperty
+    private String addressString;
 }
