@@ -6,12 +6,12 @@ This is a beginner-friendly microservices-based e-commerce project built using S
 
 Key Features
 
-	•	Microservices Architecture: Independent services such as product catalog, user management, order processing, and payment services.
-	•	Spring Boot & Java: A robust and widely-used Java framework for building scalable backend services.
-	•	MongoDB & MySQL: Efficient use of both NoSQL and relational databases for handling structured and unstructured data.
-	•	Apache Kafka: Event-driven architecture to handle communication between services and ensure high throughput and fault tolerance.
-	•	Spring Cloud: Integration for service discovery, load balancing, and configuration management.
-	•	Docker & Kubernetes: Ready for containerization and orchestration for easy deployment in cloud environments.
+	• Microservices Architecture: Independent services such as product catalog, user management, order processing, and payment services.
+	• Spring Boot & Java: A robust and widely-used Java framework for building scalable backend services.
+	• MongoDB & MySQL: Efficient use of both NoSQL and relational databases for handling structured and unstructured data.
+	• Apache Kafka: Event-driven architecture to handle communication between services and ensure high throughput and fault tolerance.
+	• Spring Cloud: Integration for service discovery, load balancing, and configuration management.
+	• Docker & Kubernetes: Ready for containerization and orchestration for easy deployment in cloud environments.
 
 Why This Project?
 
